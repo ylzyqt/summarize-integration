@@ -16,53 +16,57 @@
  3. start && stop 
       
       
-      kafka start:  ./kafka-server-start -daemon ../etc/kafka/server.properties
-      kafka stop :  ./kafka-server-stop 
-      schema start: ./schema-registry-start -daemon ../etc/schema-registry/schema-registry.properties
-      distributed start: ./connect-distributed -daemon ../etc/schema-registry/connect-avro-distributed.properties 
+      1. kafka start:  ./kafka-server-start -daemon ../etc/kafka/server.properties
+      2. kafka stop :  ./kafka-server-stop 
+      3. schema start: ./schema-registry-start -daemon ../etc/schema-registry/schema-registry.properties
+      4. distributed start: ./connect-distributed -daemon ../etc/schema-registry/connect-avro-distributed.properties 
                 
  4. crud in kafka
  
  
       1. create:
-           ./kafka-topics --create --zookeeper zkAddress --replication-factor 2 --partitions 2 --topic mytopic
+            1. ./kafka-topics --create --zookeeper zkAddress --replication-factor 2 --partitions 2 --topic mytopic
            
       2. delete
-            sudo ./kafka-topics --delete --zookeeper 127.0.0.1:2181 --topic zhudongquan
-           （1）登录zookeeper客户端：命令：./bin/zkCli.sh 
-           （2）找到topic所在的目录：ls /brokers/topics
-           （3）找到要删除的topic，执行命令：rmr /brokers/topics/【topic name】即可，此时topic被彻底删除。
-            delete /brokers/topics/zhudongquan/partitions/0/state
-            (4) 恢复误删 delete /admin/delete_topics/test
+            1. sudo ./kafka-topics --delete --zookeeper 127.0.0.1:2181 --topic zhudongquan
+            2. 登录zookeeper客户端：命令：./bin/zkCli.sh 
+            3. 找到topic所在的目录：ls /brokers/topics
+            4. 找到要删除的topic，执行命令：rmr /brokers/topics/【topic name】即可，此时topic被彻底删除。
+            5. delete /brokers/topics/zhudongquan/partitions/0/state
+            6. 恢复误删 delete /admin/delete_topics/test
            
            
             正式环境删除命令:
-            rmr /kafka/config/topics/data-backup.upay.order-transaction
-            rmr /kafka/brokers/topics/data-backup.upay.order-transaction
-            rmr /kafka/admin/delete_topics/data-backup.upay.order-transaction
+            1. rmr /kafka/config/topics/data-backup.upay.order-transaction
+            2. rmr /kafka/brokers/topics/data-backup.upay.order-transaction
+            3. rmr /kafka/admin/delete_topics/data-backup.upay.order-transaction
            
       3. modify
            //修改过期时间
-           ./kafka-topics --zookeeper zkAddress --alter --topic mytopic --config retention.ms=86400000
+           
+           1. ./kafka-topics --zookeeper zkAddress --alter --topic mytopic --config retention.ms=86400000
            
            //修改分区数
-           ./kafka-topics  --zookeeper zkAddress --alter --topic mytopic --partitions 3
+           
+           2. ./kafka-topics  --zookeeper zkAddress --alter --topic mytopic --partitions 3
                              
            //修改可最大字节数
-           ./kafka-configs --zookeeper zdAddress --entity-type topics --entity-name mytopic --alter --add-config max.message.bytes=3145728
-           ./kafka-configs --zookeeper zkAddress --entity-type topics --entity-name mytopic --alter --add-config max.partition.fetch.bytes=3145728
+           
+           3. ./kafka-configs --zookeeper zdAddress --entity-type topics --entity-name mytopic --alter --add-config max.message.bytes=3145728
+           4. ./kafka-configs --zookeeper zkAddress --entity-type topics --entity-name mytopic --alter --add-config max.partition.fetch.bytes=3145728
            
            //[修改replicas数-此部分在新版本待校验](http://kafka.apache.org/documentation/#basic_ops_increase_replication_factor)
-           increase-replication-factor.json
+           
+           5. increase-replication-factor.json
            {"version":1,"partitions":[{"topic":"springCloudBus","partition":0,"replicas":[0,2]}]}
            ./kafka-reassign-partitions --zookeeper zkAddress --reassignment-json-file increase-replication-factor.json --execute
            
       4. 查
-           ./kafka-topics --list --zookeeper zkAddress
-           ./kafka-topics --describe --zookeeper  zkAddress --topic mytopic    
+           1. ./kafka-topics --list --zookeeper zkAddress
+           2. ./kafka-topics --describe --zookeeper  zkAddress --topic mytopic    
            
       5. 消费
-          ./kafka-console-consumer --bootstrap-server kafkaBroker --topic mytopic --from-beginning     
+           1. ./kafka-console-consumer --bootstrap-server kafkaBroker --topic mytopic --from-beginning     
            
         
  5. kafka connector       
