@@ -68,13 +68,13 @@
  5. kafka connector       
        
        
-       (1) 查看kafka状态命令
+       1. 查看kafka状态命令
            curl -H "Accept:application/json" localhost:8083/
        
-       (2)查看kafka当前的connectos
+       2. 查看kafka当前的connectos
            curl -H "Accept:application/json" localhost:8083/connectors/
        
-       (3)开启kafka binlog connectors
+       3. 开启kafka binlog connectors
        
        本地:
        curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" localhost:8083/connectors/ -d 
@@ -82,10 +82,10 @@
           "database.port": "3306", "database.user": "root", "database.password": "root", "database.server.id": "1", "database.server.name": "backstage",
             "database.whitelist": "db0", "database.history.kafka.bootstrap.servers": "localhost:9092", "database.history.kafka.topic": "schema-changes.back" } }’
            
-       (4) 查看具体的connectors:
+       4. 查看具体的connectors:
        curl -i -X GET -H "Accept:application/json" localhost:8083/connectors/test-connector
        
-       (5) 详细列表
+       5. 详细列表
        由于Kafka Connect的目的是作为一个服务运行，提供了一个用于管理connector的REST API。默认情况下，此服务的端口是8083。以下是当前支持的终端入口：
        * GET /connectors - 返回活跃的connector列表
        * POST /connectors - 创建一个新的connector；请求的主体是一个包含字符串name字段和对象config字段（connector的配置参数）的JSON对象。
