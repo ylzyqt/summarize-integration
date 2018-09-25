@@ -7,3 +7,4 @@
   3. [rz](https://github.com/ylzyqt/summarize-integration/blob/master/rz/rz.md)
   4. [linux](https://github.com/ylzyqt/summarize-integration/blob/master/linux/linux.md)
   5. [maven](https://github.com/ylzyqt/summarize-integration/blob/master/maven/maven.md)
+  6. [emqttd](https://github.com/ylzyqt/summarize-integration/blob/master/emqttd/emqttd.md)
