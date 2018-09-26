@@ -27,7 +27,7 @@
       
  3. 删除ApolloConfigDB中的无用AppId   
  
- 
+ (```)
      set @appId = '90000000';     
      Use `ApolloConfigDB`;  
      
@@ -47,11 +47,12 @@
      update `Namespace` set `IsDeleted` = 1 where `Id` in (select `Id` from `NamespaceIds`);  
      update `Item` set `IsDeleted` = 1 where `NamespaceId` in (select `Id` from `NamespaceIds`);  
      delete from `NamespaceLock` where `NamespaceId` in (select `Id` from `NamespaceIds`);  
-     drop temporary table `NamespaceIds`;    
+     drop temporary table `NamespaceIds`;   
+  (```)    
        
  4. ApolloPortalDB中替换账号
      
-     
+  (```)   
      set @olduser = 'zhangsan@**.com';
      set @newuser = 'zhangsan@**.com';
      
@@ -91,11 +92,11 @@
      
      USE  `bingo`;
      update `members`  set `email`  = @newuser where `email`  = @olduser;  
-     
+  (```)   
      
  5. ApolloConfig中替换账号
     
-    
+    (```)
      set @olduser = 'zhangsi@shouqiaba.com';
      set @newuser = 'zhangsi@shouqianba.com';
      
@@ -135,5 +136,5 @@
      
      update `releasehistory`   set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
      update `releasehistory`   set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @newuser;
-    
+    (```)
     
