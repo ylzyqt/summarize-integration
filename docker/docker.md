@@ -16,6 +16,19 @@
        
  2. docker 基本命令
     
+    2.1 帮助命令:  
+         
+         2.1.1 `docker version`  查看版本
+         
+         2.1.2 `docker info` 查看详情
+         
+         2.1.3 `docker --help` 查看帮助
+    
+    2.2 镜像命令 
+    
+         2.2.1 `docker images` 查看所有的镜像 [-a查看全部][-q查看镜像id][-digests查看说明]
+         
+         2.2.2 `docker search tomcat` 搜索tomcat的版本信息  
        
     
     
