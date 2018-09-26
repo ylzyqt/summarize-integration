@@ -21,6 +21,10 @@
          2.2.5  提交镜像
          
                 docker commit -m 'message' container_id  namespace/name:version  
+                
+         2.2.6  提交到仓库
+            
+                docker push namespace/name  即可提交(前提:需要登陆)       
          
     2.3 容器命令
          

@@ -26,10 +26,13 @@
                kernel 
                
                
- 4. [数据卷](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_volumns.md)              
+ 4. [数据卷](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_volumns.md)    
  
  
- 5. [常见镜像](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_images.md)
+ 5. [Dockerfile](https://github.com/ylzyqt/summarize-integration/blob/master/docker/dockerfile.md)         
+ 
+ 
+ 6. [常见镜像](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_images.md)
     
     
     

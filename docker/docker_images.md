@@ -1,6 +1,6 @@
 ## summarize 
 
-    5.1 elasticsearch:  
+    6.1 elasticsearch:  
          
          5.1.1 下载:   docker pull elasticsearch:5.4.2
          
@@ -8,7 +8,7 @@
          
        
     
-    5.2 kafka 
+    6.2 kafka 
     
          5.2.1 下载:   docker pull spotify/kafka
          
