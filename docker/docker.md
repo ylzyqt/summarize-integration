@@ -15,6 +15,12 @@
     1.4 mac使用阿里云镜像的时候，需要使用http,而不用https
        
  2. [docker 基本命令](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_basic.md)
+ 
+ 
+ 
+ 5. [常见镜像](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_images.md)
+    
+    
     
     
                             
