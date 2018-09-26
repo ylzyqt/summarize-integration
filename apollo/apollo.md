@@ -5,7 +5,7 @@
     
  2.  删除ApolloPortalDB 中无用的AppId
  
- 
+    (```)
      set @appId = 'bb';     
      Use `ApolloPortalDB`;     
      update `App` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
@@ -23,6 +23,7 @@
      update `UserRole` set `IsDeleted` = 1 where `RoleId` in (select `Id` from `RoleIds`);  
      update `ConsumerRole` set `IsDeleted` = 1 where `RoleId` in (select `Id` from `RoleIds`);  
      drop temporary table `RoleIds`;  
+    (```) 
       
  3. 删除ApolloConfigDB中的无用AppId   
  
