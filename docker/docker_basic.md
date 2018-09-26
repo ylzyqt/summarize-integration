@@ -18,11 +18,15 @@
          
          2.2.4 `docker rmi image_id` 删除镜像[-f 强制删除]
          
+         2.2.5  提交镜像
+         
+                docker commit -m 'message' container_id  namespace/name:version  
+         
     2.3 容器命令
          
-         2.3.1 `docker run image_id` [-i 启动交互式][-t 启动伪终端][--name 重新命名别名][-d 以守护进程的方式启动]
+         2.3.1 `docker run image_id` [-i 启动交互式][-t 启动伪终端][--name 重新命名别名][-d 以守护进程的方式启动][-p 端口映射]
                 
-                docker run -it -d --name test_name images_id
+                docker run -it -d --name test_name -p 8080:8080 images_id
                 
          2.3.2 `docker ps `  列出当前所有在运行的容器
          
@@ -62,9 +66,10 @@
             
                 `docker attach container_id` 重新进入容器里面
                 
-                `docker exec -t container_id ls -l /tmp` 在容器中执行某些任务,并不一定是进入这个终端       
+                `docker exec -it container_id /bin/bash` 在容器中执行某些任务,并不一定是进入这个终端       
                 
          2.3.9 拷贝容器内的文件到诉宿主机器
          
-                `docker cp 7dae8873c170:/app/bin/test.log /Users/****/Downloads/`       
+                `docker cp 7dae8873c170:/app/bin/test.log /Users/****/Downloads/`    
+                   
                 

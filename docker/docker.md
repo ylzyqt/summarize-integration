@@ -16,6 +16,14 @@
        
  2. [docker 基本命令](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_basic.md)
  
+ 3. docker 联合文件系统,分层镜像
+    
+    
+       举例tomcat镜像
+          tomcat 
+            jdk8
+             centos  
+               kernel 
  
  
  5. [常见镜像](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker_images.md)
