@@ -11,3 +11,4 @@
   7. [docker](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker.md)
   8. [apollo](https://github.com/ylzyqt/summarize-integration/blob/master/apollo/apollo.md)
   9. [mysql](https://github.com/ylzyqt/summarize-integration/blob/master/mysql/mysql.md)
+  10. [rinetd](https://github.com/ylzyqt/summarize-integration/blob/master/rinetd/rinetd.md)
