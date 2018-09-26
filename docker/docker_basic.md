@@ -75,5 +75,8 @@
          2.3.9 拷贝容器内的文件到诉宿主机器
          
                 `docker cp 7dae8873c170:/app/bin/test.log /Users/****/Downloads/`    
+                
+         2.4.0 删除无用的镜像和容器       
                    
+                `sudo docker system prune -a`   
                 

@@ -9,3 +9,4 @@
   5. [maven](https://github.com/ylzyqt/summarize-integration/blob/master/maven/maven.md)
   6. [emqttd](https://github.com/ylzyqt/summarize-integration/blob/master/emqttd/emqttd.md)
   7. [docker](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker.md)
+  8. [apollo](https://github.com/ylzyqt/summarize-integration/blob/master/apollo/apollo.md)
