@@ -1,0 +1,9 @@
+FROM centos
+ENV  WORK_DIR /tmp
+WORKDIR $WORK_DIR
+RUN yum -y install vim
+RUN yum -y install net-tools
+EXPOSE 80
+CMD /bin/bash
+
+

@@ -27,5 +27,8 @@
     
     5.3. docker build
     
-    
+         5.3.1. [mycentos](https://github.com/ylzyqt/summarize-integration/blob/master/docker/dockfile/mycentos)
+         
+         docker build -f Dockerfile -t namespace/centos:tag .
+           
     5.4. 执行
