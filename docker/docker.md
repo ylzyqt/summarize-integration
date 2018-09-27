@@ -2,6 +2,7 @@
 
  1. [安装Docker For Mac](http://docker-cn.com/get-docker)  
  
+ 
     1.1. 下载后, 按照默认安装即可
     1.2. 启动成功后，在控制台输入 docker version 即可查看docker版本
     1.3. 与虚拟机的区别: 
