@@ -12,4 +12,3 @@
   8. [apollo](https://github.com/ylzyqt/summarize-integration/blob/master/apollo/apollo.md)
   9. [mysql](https://github.com/ylzyqt/summarize-integration/blob/master/mysql/mysql.md)
   10. [rinetd](https://github.com/ylzyqt/summarize-integration/blob/master/rinetd/rinetd.md)
-  11. [代码重构](https://github.com/ylzyqt/summarize-integration/blob/master/reconsitution/reconsitution.md)
