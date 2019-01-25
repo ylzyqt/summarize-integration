@@ -1,14 +1,18 @@
 # summarize-integration
 
 
-+ #### 随笔太多、整理如下:
-  1. [zookeeper](https://github.com/ylzyqt/summarize-integration/blob/master/zookeeper/zookeeper.md)
-  2. [kafka](https://github.com/ylzyqt/summarize-integration/blob/master/kafka/kafka.md)
-  3. [rz](https://github.com/ylzyqt/summarize-integration/blob/master/rz/rz.md)
-  4. [linux](https://github.com/ylzyqt/summarize-integration/blob/master/linux/linux.md)
-  5. [maven](https://github.com/ylzyqt/summarize-integration/blob/master/maven/maven.md)
-  6. [emqttd](https://github.com/ylzyqt/summarize-integration/blob/master/emqttd/emqttd.md)
-  7. [docker](https://github.com/ylzyqt/summarize-integration/blob/master/docker/docker.md)
-  8. [apollo](https://github.com/ylzyqt/summarize-integration/blob/master/apollo/apollo.md)
-  9. [mysql](https://github.com/ylzyqt/summarize-integration/blob/master/mysql/mysql.md)
-  10. [rinetd](https://github.com/ylzyqt/summarize-integration/blob/master/rinetd/rinetd.md)
+
+####  随笔较多,此处统一登记造册
+
+- [前言](README.md)
+- [第一章: zookeeper](zookeeper/zookeeper.md)
+- [第二章: kafka](kafka/kafka.md)
+- [第三章:rz](rz/rz.md)
+- [第四章:linux](linux/linux.md)
+- [第五章:maven](maven/maven.md)
+- [第六章:emqttd](emqttd/emqttd.md)
+- [第七章:docker](docker/docker.md)
+- [第八章:apollo](apollo/apollo.md)
+- [第九章:mysql](mysql/mysql.md)
+- [第十章:rinetd](rinetd/rinetd.md)
+

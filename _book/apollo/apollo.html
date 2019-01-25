@@ -1,0 +1,523 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第八章:apollo · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../mysql/mysql.html" />
+    
+    
+    <link rel="prev" href="../docker/docker.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../zookeeper/zookeeper.html">
+            
+                <a href="../zookeeper/zookeeper.html">
+            
+                    
+                    第一章: zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../kafka/kafka.html">
+            
+                <a href="../kafka/kafka.html">
+            
+                    
+                    第二章: kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../rz/rz.html">
+            
+                <a href="../rz/rz.html">
+            
+                    
+                    第三章:rz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../linux/linux.html">
+            
+                <a href="../linux/linux.html">
+            
+                    
+                    第四章:linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../maven/maven.html">
+            
+                <a href="../maven/maven.html">
+            
+                    
+                    第五章:maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../emqttd/emqttd.html">
+            
+                <a href="../emqttd/emqttd.html">
+            
+                    
+                    第六章:emqttd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../docker/docker.html">
+            
+                <a href="../docker/docker.html">
+            
+                    
+                    第七章:docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="apollo.html">
+            
+                <a href="apollo.html">
+            
+                    
+                    第八章:apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../mysql/mysql.html">
+            
+                <a href="../mysql/mysql.html">
+            
+                    
+                    第九章:mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../rinetd/rinetd.html">
+            
+                <a href="../rinetd/rinetd.html">
+            
+                    
+                    第十章:rinetd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第八章:apollo</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="summarize">summarize</h2>
+<h3 id="apollo"><a href="https://github.com/ctripcorp/apollo" target="_blank">apollo</a></h3>
+<p>&#x80CC;&#x666F;&#xFF0C;&#x643A;&#x7A0B;apollo&#x4E00;&#x4E9B;&#x8FD0;&#x7EF4;&#x811A;&#x672C;</p>
+<h3 id="1-&#x5220;&#x9664;apolloportaldb-&#x4E2D;&#x65E0;&#x7528;&#x7684;appid">1, &#x5220;&#x9664;ApolloPortalDB &#x4E2D;&#x65E0;&#x7528;&#x7684;AppId</h3>
+<pre><code>set @appId = &apos;bb&apos;;     
+
+Use `ApolloPortalDB`;     
+
+update `App` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `AppNamespace` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `Favorite` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+create temporary table `PermissionIds` as select `Id` from `Permission` where (`TargetId` = @appId or `TargetId` like CONCAT(@appId, &apos;+%&apos;))  and `IsDeleted` = 0;  
+
+update `Permission` set `IsDeleted` = 1 where `Id` in (select `Id` from `PermissionIds`);  
+
+update `RolePermission` set `IsDeleted` = 1 where `PermissionId` in (select `Id` from `PermissionIds`);  
+
+drop temporary table `PermissionIds`;  
+
+create temporary table `RoleIds` as select `Id` from `Role` where (`RoleName` = CONCAT(&apos;Master+&apos;, @appId) or `RoleName` like CONCAT(&apos;ModifyNamespace+&apos;, @appId, &apos;+%&apos;) or `RoleName` like CONCAT(&apos;ReleaseNamespace+&apos;, @appId, &apos;+%&apos;)) and `IsDeleted` = 0; 
+
+update `Role` set `IsDeleted` = 1 where `Id` in (select `Id` from `RoleIds`);  
+
+update `UserRole` set `IsDeleted` = 1 where `RoleId` in (select `Id` from `RoleIds`);  
+
+update `ConsumerRole` set `IsDeleted` = 1 where `RoleId` in (select `Id` from `RoleIds`);  
+
+drop temporary table `RoleIds`;
+</code></pre><h3 id="2&#x5220;&#x9664;apolloconfigdb&#x4E2D;&#x7684;&#x65E0;&#x7528;appid">2.&#x5220;&#x9664;ApolloConfigDB&#x4E2D;&#x7684;&#x65E0;&#x7528;AppId</h3>
+<pre><code>set @appId = &apos;90000000&apos;; 
+
+Use `ApolloConfigDB`;  
+
+update `App` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `AppNamespace` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `Cluster` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `Commit` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `GrayReleaseRule` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `Release` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `ReleaseHistory` set `IsDeleted` = 1 where `AppId` = @appId and `IsDeleted` = 0;  
+
+delete from `Instance` where `AppId` = @appId;  
+
+delete from `InstanceConfig` where `ConfigAppId` = @appId;  
+
+delete from `ReleaseMessage` where `Message` like CONCAT(@appId, &apos;+%&apos;);  
+
+create temporary table `NamespaceIds` as select `Id` from `Namespace` where `AppId` = @appId and `IsDeleted` = 0;  
+
+update `Namespace` set `IsDeleted` = 1 where `Id` in (select `Id` from `NamespaceIds`);  
+
+update `Item` set `IsDeleted` = 1 where `NamespaceId` in (select `Id` from `NamespaceIds`);  
+
+delete from `NamespaceLock` where `NamespaceId` in (select `Id` from `NamespaceIds`);  
+
+drop temporary table `NamespaceIds`;
+</code></pre><h3 id="3-apolloportaldb&#x4E2D;&#x66FF;&#x6362;&#x8D26;&#x53F7;">3. ApolloPortalDB&#x4E2D;&#x66FF;&#x6362;&#x8D26;&#x53F7;</h3>
+<pre><code>set @olduser = &apos;zhangsan@**.com&apos;;
+
+set @newuser = &apos;zhangsan@**.com&apos;;
+
+USE   `apolloportaldb`;
+
+update `users`  set `Username`  = @newuser, `Email` =@newuser where `Username`  = @olduser;
+
+update `userrole`  set `UserId`  =@newuser where `UserId` =@olduser;
+
+update `userrole` set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `userrole` set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  =@olduser;
+
+update `authorities`  set `username`  = @newuser where `username`  = @olduser;
+
+update `role`  set `DataChange_CreatedBy` =@newuser  where `DataChange_CreatedBy` =@olduser;
+
+update `role`  set `DataChange_LastModifiedBy` =@newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `rolepermission`  set `DataChange_CreatedBy` =@newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `rolepermission`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `permission`  set `DataChange_CreatedBy` =@newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `permission`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `favorite`  set `UserId`  = @newuser where `UserId`  =@olduser;
+
+update `favorite`  set `DataChange_CreatedBy` = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `favorite`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `app`  set `OwnerName`  = @newuser where `OwnerName`  = @olduser;
+
+update `app`  set `OwnerEmail`  = @newuser where `OwnerEmail`  = @olduser;
+
+update `app`  set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `app`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `appnamespace`  set `DataChange_CreatedBy`  =@newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `appnamespace`  set `DataChange_LastModifiedBy` = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+USE  `bingo`;
+update `members`  set `email`  = @newuser where `email`  = @olduser;
+</code></pre><h3 id="4apolloconfig&#x4E2D;&#x66FF;&#x6362;&#x8D26;&#x53F7;">4.ApolloConfig&#x4E2D;&#x66FF;&#x6362;&#x8D26;&#x53F7;</h3>
+<pre><code>set @olduser = &apos;olduser&apos;;
+
+set @newuser = &apos;newuser&apos;;
+
+USE   `apolloconfigdb`;
+
+update `app`  set `OwnerName`  = @newuser where `OwnerName`  = @olduser;
+
+update `app`  set `OwnerEmail`  = @newuser where `OwnerEmail`  = @olduser;
+
+update `app`  set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `app`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `appnamespace`  set `DataChange_CreatedBy`  =@newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `appnamespace`  set `DataChange_LastModifiedBy` = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `audit`  set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `audit`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `cluster`  set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `cluster`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `commit`  set `DataChange_CreatedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `commit`  set `DataChange_LastModifiedBy` =@newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `item`  set `DataChange_CreatedBy`  =@newuser where `DataChange_CreatedBy`  =@olduser;
+
+update `item`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @olduser;
+
+update `namespace`  set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `namespace`  set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @newuser;
+
+update `release`   set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `release`   set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @newuser;
+
+update `releasehistory`   set `DataChange_CreatedBy`  = @newuser where `DataChange_CreatedBy`  = @olduser;
+
+update `releasehistory`   set `DataChange_LastModifiedBy`  = @newuser where `DataChange_LastModifiedBy`  = @newuser;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../docker/docker.html" class="navigation navigation-prev " aria-label="Previous page: 第七章:docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../mysql/mysql.html" class="navigation navigation-next " aria-label="Next page: 第九章:mysql">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第八章:apollo","level":"1.9","depth":1,"next":{"title":"第九章:mysql","level":"1.10","depth":1,"path":"mysql/mysql.md","ref":"mysql/mysql.md","articles":[]},"previous":{"title":"第七章:docker","level":"1.8","depth":1,"path":"docker/docker.md","ref":"docker/docker.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apollo/apollo.md","mtime":"2019-01-25T08:20:38.196Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-25T08:22:41.304Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
